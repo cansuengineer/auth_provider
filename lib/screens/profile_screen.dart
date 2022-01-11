@@ -1,3 +1,4 @@
+import 'package:auth_provider/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -81,7 +82,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 builder: (context) => const LoginScreen()),
                             (route) => false);
                       },
-                      child: const Text('Logout'))
+                      child: const Text('Logout')),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  ElevatedButton(
+                      onPressed: () async {
+                        await auth.logout();
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Home()));
+                      },
+                      child: const Text('Logout')),
                 ],
               ),
             ),
