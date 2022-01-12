@@ -29,7 +29,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    //5
+    //provide 'ı kurmuşum
     final auth = Provider.of<Auth>(context);
 
     return Scaffold(

@@ -3,7 +3,6 @@ import 'package:auth_provider/screens/profile_screen.dart';
 import 'package:auth_provider/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'model/user_model.dart';
 
 class Wrapper extends StatelessWidget {
