@@ -94,7 +94,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             MaterialPageRoute(
                                 builder: (context) => const Home()));
                       },
-                      child: const Text('Logout')),
+                      child: const Text('CRUD yap')),
                 ],
               ),
             ),
