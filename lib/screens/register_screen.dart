@@ -83,7 +83,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   final isValid = _formKey.currentState!.validate();
                   //8
                   await auth
-                      .handleSignUp(
+                      .createUser(
                           _emailController.text, _passwordController.text)
                       .then((value) {
                     Navigator.of(context).push(MaterialPageRoute(
